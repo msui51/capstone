@@ -1,0 +1,66 @@
+@import '../../Styles/variables';
+@import '../../Styles/mixins';
+
+.contact{
+    background-color: $primary-background;
+    padding:3rem;
+    &__title{
+        margin:0;
+        color: $third-color;
+    }
+    &__form-wrapper{
+        margin: 1.5rem 6rem;
+        padding: 2rem 6rem;
+        border:1px solid $header-border;
+        background-color: white;
+        height: 70vh;
+        border-radius: 0.5rem;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        height:50vh;
+    }
+    &__input{
+        margin:1.5rem 0 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem;
+        border-radius: 0.5rem;
+        border:none;
+        border:1px solid $header-border;
+        &:first-of-type{
+            margin-top: 0.5rem;
+        }
+        &:hover{
+            border-color: $third-color;
+        }
+        &:focus{
+            outline:1px solid $third-color;
+        }
+    }
+    &__input-error{
+        margin:1.5rem 0 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        &:focus{
+            outline: 1px solid $error-contact-form;
+        }
+    }
+    &__input--long{
+        padding-bottom: 3rem;
+    }
+    &__button-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button{
+        margin-top: 1.5rem;
+        width: 25%;
+    }
+    &__button-send{
+        @include login-button;
+    }
+    &__button-cancel{
+        @include cancel-button;
+    }
+}

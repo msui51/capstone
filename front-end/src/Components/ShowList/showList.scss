@@ -1,0 +1,43 @@
+@import '../../Styles/mixins';
+@import '../../Styles/variables';
+
+.showList{
+    padding:1rem 2rem 0 2rem;
+    &__link-wrapper{
+        margin-left: 2.9rem;
+    }
+    &__back-link{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__title{
+        padding-left: 0.5rem;
+        color: $third-color;
+    }
+    &__wrapper{
+        margin: 0 4rem 0 3rem;
+        border: 1px solid $secondary-border;
+        border-radius: 4px;
+        background-color: $secondary-background;
+    }
+    &__sub-titles-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 4rem;
+        margin: 0 2rem;
+    }
+    &__sub-titles{
+        display: inline;
+        width: 25%;   
+        color: $border-color;
+    }
+    &__show-link{
+        text-decoration: none;
+        color: $border-color;
+    }
+}

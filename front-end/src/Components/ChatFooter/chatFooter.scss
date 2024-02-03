@@ -1,0 +1,27 @@
+@import '../../Styles/mixins';
+@import '../../Styles//variables';
+
+.chatFooter{
+    width: 95%;
+    display: flex;
+    margin-bottom: 3rem;
+    margin-left: 2.8rem;
+    &__input{
+        width: 82%;
+        border-radius: 0.5rem;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        border: 1px solid $header-border;
+        &:hover{
+            border-color: $header-background;
+        }
+        &:focus{
+            outline: 1px solid $header-background;
+        }
+    }
+    &__button{
+        @include login-button;
+        width:13%;
+        margin-left:1rem;
+    }
+}
